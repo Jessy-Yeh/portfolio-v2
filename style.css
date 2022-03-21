@@ -1,0 +1,43 @@
+:root {
+  --main-bg-color: #e7e7e7;
+  --font-color: #8a8a8a;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--font-color);
+  padding: 1rem;
+  font-family: "Lora", sans-serif;
+  letter-spacing: 2px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu > div {
+  width: 20px;
+  height: 3px;
+  background-color: var(--font-color);
+  margin-bottom: 5px;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-text {
+  width: 180px;
+}
+
+.intro-text p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.intro-container img {
+  width: 200px;
+}
