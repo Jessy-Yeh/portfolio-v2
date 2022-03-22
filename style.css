@@ -170,3 +170,13 @@ form {
   padding: 0.3rem 0;
 }
 
+footer {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--focus-color);
+  cursor: pointer;
+}
