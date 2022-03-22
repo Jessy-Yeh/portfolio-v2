@@ -7,6 +7,10 @@
   --focus-color: rgb(242, 242, 153);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--main-bg-color);
   color: var(--font-color);
@@ -19,6 +23,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.menu {
+  cursor: pointer;
 }
 
 .menu div {
@@ -26,6 +35,30 @@ nav {
   height: 3px;
   background-color: var(--font-color);
   margin-bottom: 5px;
+}
+
+.menu-content-container {
+  background-color: var(--main-bg-color);
+  position: fixed;
+  top: 40px;
+  right: -950px;
+  left: 950px;
+  bottom: 0;
+  transition: 0.2s;
+}
+
+.menu-content {
+  margin-top: 7rem;
+  padding: 2rem;
+  color: var(--font-color);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.menu-content a {
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .intro-container {
@@ -56,6 +89,7 @@ nav {
 
 .intro-text {
   margin-top: 1rem;
+  flex: 0.8;
 }
 
 .intro-text p {
@@ -168,6 +202,7 @@ form {
   color: var(--font-color);
   font-weight: 500;
   padding: 0.3rem 0;
+  cursor: pointer;
 }
 
 footer {
@@ -179,4 +214,60 @@ footer {
 footer a {
   color: var(--focus-color);
   cursor: pointer;
+}
+
+.display {
+  right: 0;
+  left: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.snip {
+  font-family: "Raleway", Arial, sans-serif;
+  /* text-align: center; */
+  text-transform: uppercase;
+  font-weight: 500;
+  /* letter-spacing: 1px; */
+}
+.snip * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.snip a {
+  /* padding: 0.4em 0; */
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.snip a:before {
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  border-top: 3px solid var(--card-bg-color);
+  border-bottom: 3px solid var(--card-bg-color);
+}
+.snip a:hover,
+.snip .current a {
+  color: #ffffff;
+}
+.snip a:hover:before,
+.snip .current a:before {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
 }
