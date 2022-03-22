@@ -147,3 +147,26 @@ h2 {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
+form {
+  margin-top: 1rem;
+  display: grid;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: var(--font-color);
+  font-weight: 500;
+  padding: 0.3rem 0;
+}
+
