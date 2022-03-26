@@ -1,11 +1,10 @@
 :root {
-  --main-bg-color: #b1b1b1;
-  --font-color: #f9f9f9;
-  --card-bg-color: rgb(177, 191, 223);
-  --button-color: rgb(181, 217, 237);
-  --skill-color: rgb(83, 105, 177);
-  --focus-color: rgb(242, 242, 153);
-  --emphasize-color: rgb(244, 241, 103);
+  --main-bg-color: #c0c2ce;
+  --font-color: #fff;
+  --card-bg-color: #d2d4dc;
+  --button-color: #afafaf;
+  --skill-color: #5e5656;
+  --emphasize-color: #58668b;
 }
 
 html {
@@ -16,7 +15,7 @@ body {
   background-color: var(--main-bg-color);
   color: var(--font-color);
   padding: 0 5vw;
-  font-family: "Lora", sans-serif;
+  font-family: "Mukta", sans-serif;
   letter-spacing: 2px;
 }
 
