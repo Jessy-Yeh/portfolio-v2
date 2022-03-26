@@ -39,6 +39,11 @@ nav {
   z-index: 999;
 }
 
+.logo-container {
+  font-weight: 800;
+  cursor: pointer;
+}
+
 .menu {
   cursor: pointer;
 }
