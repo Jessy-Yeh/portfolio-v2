@@ -85,7 +85,7 @@ nav {
 .landing {
   margin: 0 auto;
   position: relative;
-  height: 93vh;
+  height: 95vh;
 }
 
 .intro-container {
@@ -109,7 +109,6 @@ nav {
 }
 
 .intro-img-container img {
-  margin-top: 1rem;
   border-radius: 5px;
   filter: grayscale(30%);
 }
@@ -310,7 +309,7 @@ form {
   margin: 0 auto;
 }
 
-form p {
+.contact p {
   width: 280px;
   font-size: 1rem;
   margin-bottom: 2rem;
