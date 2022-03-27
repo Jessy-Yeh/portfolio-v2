@@ -56,27 +56,25 @@ nav {
 }
 
 .menu-content-container {
-  background-color: var(--main-bg-color);
   position: fixed;
   margin: 0 auto;
-  top: 40px;
+  top: 25px;
   right: -2950px;
   bottom: 0;
   transition: 0.2s;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .menu-content {
-  margin-top: 2rem;
-  padding: 2rem;
+  background-color: var(--main-bg-color);
   color: var(--font-color);
   font-weight: 700;
   font-size: 2rem;
   text-align: right;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .menu-content a {
@@ -382,8 +380,8 @@ footer a {
   padding: 0;
 }
 .snip a {
-  /* padding: 0.4em 0; */
-  color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em 0;
+  color: #fff;
   position: relative;
   text-decoration: none;
   display: inline-block;
@@ -403,7 +401,7 @@ footer a {
 }
 .snip a:hover,
 .snip .current a {
-  color: #ffffff;
+  color: var(--skill-color);
 }
 .snip a:hover:before,
 .snip .current a:before {
@@ -453,11 +451,8 @@ footer a {
   }
 
   .menu-content-container {
-    /* position: inherit;
-    top: 0;
-    left: 0px;
-    right: 0px;
-    z-index: -99; */
+    z-index: -99;
+    /* background-color: none; */
   }
 
   .menu-content {
