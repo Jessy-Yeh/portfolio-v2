@@ -214,6 +214,29 @@ h2 {
 .about-me ul {
   margin-top: 0.2rem;
 }
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-list li {
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-list img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.5rem;
+}
+
 .work-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -406,8 +429,16 @@ footer a {
     width: 350px;
   }
 
+  .skill-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .intro-img-container {
     flex: 1;
+  }
+
+  .intro-img-container img {
+    margin-top: 0;
   }
 
   .intro-text {
