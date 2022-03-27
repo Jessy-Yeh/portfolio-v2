@@ -89,14 +89,14 @@
           <div class="view-work">
             <a href="#work"><p>My Work</p>
             <div class="arrow-container">
-              <div class="arrow-down" id="about-me"></div> </a>
+              <div class="arrow-down"></div> </a>
             </div>
           </div>
         </div>
       </section>
 
-  
-          <section class="about-me">
+        <div id="aboutme" ></div>
+          <section id="aboutme" class="about-me">
             <h2>ABOUT ME</h2>
             <p>Hi✨ I'm Jessy from Taiwan and currently based in Birmingham, UK. I'm passionate about web development and I love building beautiful and functional websites. Check out my work to see what I mean :)
             </p>
@@ -126,7 +126,7 @@
 
 
       <div id="work"></div>
-      <section>
+      <section id="work" class="work">
         <h2>WORK</h2>
 
         <ul class="work-container">
@@ -203,34 +203,26 @@
         </ul>
       </section>
 
-      <section>
-
-        <div id="contact"></div>
+      <div id="contact"></div>
+      <section id="contact" class="contact">
         <h2>CONTACT</h2>
+        <p>
+          If you'd like to get in touch with me for any reason, please use the
+          form below. I'll get back to you as soon as I can!
+        </p>
 
-        <form class="contact-form" method="post" name="contact">
-          <p>
-            If you'd like to get in touch with me for any reason, please use the
-            form below. I'll get back to you as soon as I can!
-          </p>
-          <input type="text" name="name" placeholder="Your name" required />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Your email address"
-            required
-          />
-
+        <form class="contact-form" name="contact" data-netlify="'true" method="POST">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email address" required>
           <textarea
             rows="7"
             name="message"
             placeholder="What would you like to tell me?"
             required
           ></textarea>
-
+          
           <button type="submit">Send</button>
-        </form>
+         </form>
       </section>
 
       <footer>
