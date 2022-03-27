@@ -306,8 +306,33 @@ h2 {
 }
 
 .about-me {
-  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 2rem;
+}
+
+.about-me .aboutme-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.about-me .aboutme-img {
+  width: 80vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .about-me h2 {
@@ -583,9 +608,6 @@ footer a {
         -ms-flex: 1;
             flex: 1;
   }
-  .about-me {
-    width: 350px;
-  }
   .skill-list {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -630,6 +652,15 @@ footer a {
   .menu-content a {
     display: inline-block;
     margin-bottom: 0;
+  }
+  .about-me {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-me .aboutme-img {
+    width: 450px;
   }
 }
 

@@ -199,12 +199,25 @@ h2 {
 }
 
 .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 60vw;
+  line-height: 2rem;
+
+  .aboutme-text {
+    flex: 1;
+  }
+
+  .aboutme-img {
+    width: 80vw;
+    flex: 1;
+  }
+
   h2 {
     margin-top: 0;
   }
-
-  width: 280px;
-  line-height: 2rem;
 
   h3 {
     margin-top: 1.5rem;
@@ -442,10 +455,6 @@ footer {
     flex: 1;
   }
 
-  .about-me {
-    width: 350px;
-  }
-
   .skill-list {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -488,6 +497,14 @@ footer {
     a {
       display: inline-block;
       margin-bottom: 0;
+    }
+  }
+
+  .about-me {
+    flex-direction: row;
+
+    .aboutme-img {
+      width: max(450px);
     }
   }
 }
