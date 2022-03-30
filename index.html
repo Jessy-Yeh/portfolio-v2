@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jessy Yeh - Web Developer</title>
     <meta name="description" content="UK-based Web Developer" />
-    <link rel="icon" href="./images/logo.png">
+    <link rel="icon" href="./images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,8 +22,10 @@
   <body>
     <div class="page-container">
       <nav>
-        <a href="#"><P class="logo-container">[J ^ Y]</P></a>
-        <div class="menu">
+        <a href="#" class="logo-container">
+          <p>[J ^ Y]</p>
+        </a>
+        <div class="menu" role="button">
           <div></div>
           <div></div>
           <div></div>
@@ -31,7 +33,7 @@
         <div class="menu-content-container">
           <ul class="menu-content snip">
             <li class="home">
-              <a  href="#">Home</a>
+              <a href="#">Home</a>
             </li>
             <li class="aboutme">
               <a href="#about-me">About me</a>
@@ -50,7 +52,10 @@
         <div class="intro-container">
           <div class="photo-text-container">
             <div class="intro-img-container">
-              <img src="./images/mypic.jpg" src="my picture" />
+              <img
+                src="./images/mypic.jpg"
+                alt="Jessy Yeh standing in front of some trees"
+              />
             </div>
 
             <div class="intro-text">
@@ -85,75 +90,117 @@
             </div>
           </div>
 
-          
           <div class="view-work">
-            <a href="#work"><p>My Work</p>
-            <div class="arrow-container">
-              <div class="arrow-down"></div> </a>
-            </div>
+            <a href="#work">
+              <p>My Work</p>
+              <div class="arrow-container">
+                <div class="arrow-down"></div>
+              </div>
+            </a>
           </div>
         </div>
-        <div id="about-me" ></div>
+        <div id="about-me"></div>
       </section>
 
-          <section id="aboutme" class="about-me">
-            <div class="aboutme-text">
-              <h2>ABOUT ME</h2>
-              <p>Hi✨ I'm Jessy from Taiwan and currently based in Birmingham, UK. I'm passionate about web development and I love building beautiful and functional websites. Check out my work to see what I mean :)
-              </p>
-              <h3>A Little More About Me...</h3>
-              <ul class="more-aboutme">
-                <p>Piano is my best friend 🎹</p>
-                <p>I love my tea with no sugar☕️</p>
-                <p>I play badminton in my free time🏸</p>
-              </ul>
-            </div>
-            <div class="aboutme-img"><img src="./images/study.png" alt="study"></div>
-          </section>
+      <section id="aboutme" class="about-me">
+        <div class="aboutme-text">
+          <h2>ABOUT ME</h2>
+          <p>
+            Hi✨ I'm Jessy from Taiwan and currently based in Birmingham, UK.
+            I'm passionate about web development and I love building beautiful
+            and functional websites. Check out my work to see what I mean :)
+          </p>
+          <h3>A Little More About Me...</h3>
+          <ul class="aboutme-bullets">
+            <li class="piano">Piano is my best friend</li>
+            <li class="tea">I love my tea with no sugar</li>
+            <li class="badminton">I play badminton in my free time</li>
+          </ul>
+        </div>
+        <div class="aboutme-img">
+          <img src="./images/study.png" alt="study" />
+        </div>
+      </section>
 
-          <div id="skills"></div>
-          <section class="skills">
-            <h2>SKILLS</h2>
-            <ul class="skill-list">
-              <li><img src="./skills/HTML.svg"><p>HTML</p></li>
-              <li><img src="./skills/CSS.svg"><p>CSS</p></li>
-              <li><img src="./skills/Javascript.svg"><p>JavaScript</p></li>
-              <li><img src="./skills/react.svg"><p>React</p></li>
-              <li><img src="./skills/sass.png"><p>SASS</p></li>
-              <li><img src="./skills/api.webp"><p>API</p></li>
-              <li><img src="./skills/git.png"><p>GIT</p></li>
-              <li><img src="./skills/AdobeXD.svg"><p>AdobeXD</p></li>
-            </ul>
+      <section class="skills">
+        <div id="skills"></div>
+        <h2>SKILLS</h2>
+        <ul class="skill-list">
+          <li>
+            <img src="./skills/HTML.svg" />
+            <p>HTML</p>
+          </li>
+          <li>
+            <img src="./skills/CSS.svg" />
+            <p>CSS</p>
+          </li>
+          <li>
+            <img src="./skills/Javascript.svg" />
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <img src="./skills/react.svg" />
+            <p>React</p>
+          </li>
+          <li>
+            <img src="./skills/sass.png" />
+            <p>SASS</p>
+          </li>
+          <li>
+            <img src="./skills/api.webp" />
+            <p>API</p>
+          </li>
+          <li>
+            <img src="./skills/git.png" />
+            <p>GIT</p>
+          </li>
+          <li>
+            <img src="./skills/AdobeXD.svg" />
+            <p>AdobeXD</p>
+          </li>
+        </ul>
+      </section>
 
-          </section>
-
-
-      <div id="work"></div>
       <section id="work" class="work">
         <h2>WORK</h2>
 
         <ul class="work-container">
           <li class="work">
-            <div class="work-title">
+            <div class="work-header">
               <p>/01</p>
-              <p><span>React</span>  <span>API</span> </p>
+              <p><span>React</span> <span>API</span></p>
             </div>
             <div class="work-card">
               <img src="./images/goat-news.png" />
               <div class="work-card-text">
                 <h3>Goat News</h3>
                 <p>
-                  A news feed made with React and integrated with third party API which provides users the top news headlines based on Google ranking. Users can type any keywords to search for the news.<br><br>
-                  The website is fully responsive and looks as good on a phone as it does on a desktop monitor. This was achieved using CSS grid and setting different breakpoints by @media rule.
+                  A news feed made with React and integrated with third party
+                  API which provides users the top news headlines based on
+                  Google ranking. Users can type any keywords to search for the
+                  news.<br /><br />
+                  The website is fully responsive and looks as good on a phone
+                  as it does on a desktop monitor. This was achieved using CSS
+                  grid and setting different breakpoints by @media rule.
                 </p>
-                <a href="https://github.com/Jessy-Yeh/goat-news" role="button" target="blank">REPO</a>
-                <a href="https://goat-news.netlify.app" role="button" target="blank">LIVE</a>
+                <a
+                  href="https://github.com/Jessy-Yeh/goat-news"
+                  role="button"
+                  target="blank"
+                  >REPO</a
+                >
+                <a
+                  href="https://goat-news.netlify.app"
+                  role="button"
+                  target="blank"
+                  >LIVE</a
+                >
               </div>
             </div>
           </li>
 
           <li class="work">
-            <div class="work-title">
+            <div class="work-header">
               <p>/02</p>
               <p><span>JavaScript</span> <span>CSS</span></p>
             </div>
@@ -162,17 +209,32 @@
               <div class="work-card-text">
                 <h3>Wordie</h3>
                 <p>
-                  This is a wordle clone with a disco-like theme! Users have 5 attempts to guess the answer. Each guess should contain 5 letters and no special characters are allowed. <br><br> 
-                  This was built as an exercise in vanilla JavaScript. The forEach array method were used to give each letter a corresponding colour and the includes method examines if the guess is in the word list or not.
+                  This is a wordle clone with a disco-like theme! Users have 5
+                  attempts to guess the answer. Each guess should contain 5
+                  letters and no special characters are allowed. <br /><br />
+                  This was built as an exercise in vanilla JavaScript. The
+                  forEach array method were used to give each letter a
+                  corresponding colour and the includes method examines if the
+                  guess is in the word list or not.
                 </p>
-                <a href="https://github.com/Jessy-Yeh/Wordie" role="button" target="blank">REPO</a>
-                <a href="https://wordie-game.netlify.app" role="button" target="blank">LIVE</a>
+                <a
+                  href="https://github.com/Jessy-Yeh/Wordie"
+                  role="button"
+                  target="blank"
+                  >REPO</a
+                >
+                <a
+                  href="https://wordie-game.netlify.app"
+                  role="button"
+                  target="blank"
+                  >LIVE</a
+                >
               </div>
             </div>
           </li>
 
           <li class="work">
-            <div class="work-title">
+            <div class="work-header">
               <p>/03</p>
               <p><span>HTML</span> <span>CSS</span></p>
             </div>
@@ -181,16 +243,30 @@
               <div class="work-card-text">
                 <h3>VW-premium</h3>
                 <p>
-                  This car page was built with HTML and CSS, the most important fundamental languages. The hamburger menu appears on phones whilst  hidden on desktop screen as the menu will be displayed directly. <br><br>
-                  This responsive page makes use of CSS flex box module. Vanilla JS was used to filter Image gallery and toggle the Lightbox.
+                  This car page was built with HTML and CSS, the most important
+                  fundamental languages. The hamburger menu appears on phones
+                  whilst hidden on desktop screen as the menu will be displayed
+                  directly. <br /><br />
+                  This responsive page makes use of CSS flex box module. Vanilla
+                  JS was used to filter Image gallery and toggle the Lightbox.
                 </p>
-                <a href="https://github.com/Jessy-Yeh/Premium-VW" role="button" target="blank">REPO</a>
-                <a href="https://vw-premium.netlify.app" role="button" target="blank">LIVE</a>
+                <a
+                  href="https://github.com/Jessy-Yeh/Premium-VW"
+                  role="button"
+                  target="blank"
+                  >REPO</a
+                >
+                <a
+                  href="https://vw-premium.netlify.app"
+                  role="button"
+                  target="blank"
+                  >LIVE</a
+                >
               </div>
             </div>
           </li>
           <li class="work">
-            <div class="work-title">
+            <div class="work-header">
               <p>/04</p>
               <p><span>JavaScript</span> <span>SASS</span></p>
             </div>
@@ -199,17 +275,32 @@
               <div class="work-card-text">
                 <h3>Memory Game</h3>
                 <p>
-                  A fun memory game which tests how fast you can match all the cards! Once you flip the first card, the timer will start counting. <br><br> JS was used to create functions like shuffling cards, check match cards and the timer. SASS were used for this project. The 3D effect of flipping cards achieved using preserve-3d transform style.
+                  A fun memory game which tests how fast you can match all the
+                  cards! Once you flip the first card, the timer will start
+                  counting. <br /><br />
+                  JS was used to create functions like shuffling cards, check
+                  match cards and the timer. SASS were used for this project.
+                  The 3D effect of flipping cards achieved using preserve-3d
+                  transform style.
                 </p>
-                <a href="https://github.com/Jessy-Yeh/memory-game" role="button" target="blank">REPO</a>
-                <a href="https://memory-game22.netlify.app" role="button" target="blank">LIVE</a>
+                <a
+                  href="https://github.com/Jessy-Yeh/memory-game"
+                  role="button"
+                  target="blank"
+                  >REPO</a
+                >
+                <a
+                  href="https://memory-game22.netlify.app"
+                  role="button"
+                  target="blank"
+                  >LIVE</a
+                >
               </div>
             </div>
           </li>
         </ul>
       </section>
 
-      <div id="contact"></div>
       <section id="contact" class="contact">
         <h2>CONTACT</h2>
         <p>
@@ -217,19 +308,29 @@
           form below. I'll get back to you as soon as I can!
         </p>
 
-        <form class="contact-form" name="contact" data-netlify="'true" method="POST">
-          <input type="hidden" name="form-name" value="contact">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Your email address" required>
+        <form
+          class="contact-form"
+          name="contact"
+          data-netlify="'true"
+          method="POST"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="text" name="name" placeholder="Your name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            required
+          />
           <textarea
             rows="7"
             name="message"
             placeholder="What would you like to tell me?"
             required
           ></textarea>
-          
+
           <button type="submit">Send</button>
-         </form>
+        </form>
       </section>
 
       <footer>
