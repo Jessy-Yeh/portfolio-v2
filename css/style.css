@@ -250,7 +250,7 @@ h1 {
   fill: var(--emphasize-color);
 }
 
-.view-work {
+.view-work a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
